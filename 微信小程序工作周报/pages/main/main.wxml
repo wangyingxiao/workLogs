@@ -1,0 +1,27 @@
+<!--pages/main1.wxml-->
+<view >
+    <view class="row">
+      <view class="col" wx:for="{{userList}}" wx:key="userList">
+          <view data-id="{{item.id}}" data-name="{{item.name}}" data-image="{{item.image}}" data-grade="{{item.grade}}" bindtap="enterInfo">
+                <view class="imgouteruser" >
+                    <image class="user1"  src="{{item.image}}"></image>
+                </view>
+                <view class="info">
+                    <text class="name">{{item.name}}</text>
+                     <view class="imgouter">
+                        <image class="xing"  src="../images/gz3.png" wx:for="{{item.grade}}" wx:key="{{item.grade}}"></image>
+
+                     </view>
+                </view>
+                <view class="text">{{item.nowLog}}</view>
+          </view>
+        <button data-id='{{item.id}}' data-name='{{item.name}}' class="btn {{userId==item.id ? 'btngreen':''}}" bindtap='enterEdit'>
+        <image class="chat" src="../images/icon-chat{{userId==item.id ? '0':'1'}}.png"></image>工作周报</button>
+        <view class="stamp {{item.finish ? 'show' :'hidden'}}">
+          <view class="label">已完成</view>
+        </view>
+      </view>
+      </view>      
+</view>
+<!-- 弹出页面 -->
+

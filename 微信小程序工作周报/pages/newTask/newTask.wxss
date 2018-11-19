@@ -1,0 +1,28 @@
+/* pages/newTask/newTask.wxss */
+input{
+  border:1px solid #ddd;
+  margin:10px;
+  height:40px;
+  line-height:40px;
+  font-size:14px;
+  color:#222;
+  padding-left:10px;
+  border-radius: 5px;
+}
+input.group{
+  background:#f7f7f7;
+}
+text{
+  font-size:14px;
+  color: #353535;
+  font-weight: 700;
+  height:20px;
+  line-height:20px;
+padding-left:10px;  
+}
+.btn{
+  margin-top:30px;
+  width:100px;
+  background: #3280fc;
+  color:#fff;
+}

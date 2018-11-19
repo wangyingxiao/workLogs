@@ -1,0 +1,41 @@
+<!--pages/task/task.wxml-->
+
+<view class="containter">
+  <view class="list">
+    <view class="item" wx:for="{{taskList}}"  wx:key="taskList">
+      <view class="item_top">
+          <view class="date">{{item.timestamp}}</view>
+          <view class="title">移动研发组工作周报</view>  
+          <view class="time">{{item.time}}</view>      
+      </view>
+      <text class="content">{{item.description}}</text>
+      <view class="btnOuter">
+      <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-taskid="{{item.id}}" bindtap="enterMain">
+      <view>{{userId=='cremy' ? '查看':'汇报'}}</view>
+      </button>             
+        <view class="btn btn-delete {{userId=='crexlb' ? 'show':'hidden'}}" data-taskid="{{item.id}}" bindtap="delete">删除</view>
+      </view>
+      <view class="stamp {{item.state==9 ? 'show' :'hidden'}}">
+          <view class="label">已完成</view>
+        </view>
+    </view>
+    <!-- 新建任务 -->
+    <view class="createNewTask">
+    <button class="btn1 inner {{userId=='crexlb' ? 'show':'hidden'}}" bindtap="enterNewTask">创建任务</button>
+    </view>
+    
+  </view>
+</view>
+ <view class="model-bg {{model ? 'show':'hidden'}}"></view>
+<view class="model-input-containter {{model ? 'show':'hidden'}}"> 
+  <view class="model-content">
+    <view class="title">请输入您的用户名</view>
+    <view class="inputOuter">
+    <input class="userId" bindinput='getInput' value="{{inputvalue}}"></input>
+    </view>  
+    <view class="buttonOuter">     
+      <view class="btns no" bindtap="getNo">取消</view>
+      <view class="btns yes" bindtap="getYes">确定</view>
+    </view>
+  </view>
+</view>

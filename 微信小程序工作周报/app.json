@@ -1,0 +1,19 @@
+{
+  "pages": [
+    
+    "pages/task/task",
+    "pages/info/info",
+    "pages/index/index",
+    "pages/main/main",
+    "pages/edit/edit",
+    "pages/logs/logs",
+    "pages/newTask/newTask"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3280fc",
+    "navigationBarTitleText": "工作周报",
+    "navigationBarTextStyle": "white"
+  }
+}

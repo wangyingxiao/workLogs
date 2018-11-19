@@ -1,0 +1,52 @@
+<!--pages/info/info.wxml-->
+<view class="model-content">
+  <view class="model-body">
+    <view class="comments-content">
+        <view class="model-body-top">
+            <image src="{{userImage}}" class="name"></image>
+            <text class="name">{{userName}}</text>
+
+        </view>
+        <view class="model-body-top-list">
+            <view class="lf">
+                <image src="../images/icon-face-{{grade}}.png"></image>
+                <text>{{gradeDes}}</text>
+            </view>
+            <view class="mid">
+                <image src="../images/icon-jb.png"></image>
+                <text>{{grade}}</text>
+            </view>
+            <view class="rt">
+                <image src="../images/icon-xing.png" wx:for='{{grade}}' wx:key='grade'></image>
+                
+            </view>
+        </view>
+         <view class="model-body-list">
+             <view class="inner">
+                 <view class="work">
+                     <view class="workInner workInner1">
+                         <text class="work_title">工作任务</text>
+                         <text class="time">{{desList[0].timeDis}}</text>
+                     </view>
+
+                     <view class="item" wx:for="{{desList}}" wx:key="desList">{{index+1}}.{{item.description}}</view>
+                    
+                 </view>
+                 <view class="advise">
+                     <view class="workInner">
+                         <text class="work_title">意见与建议</text>
+                     </view>
+                     <view class="item" wx:for="{{adviseList}}" wx:key="adviseList">{{item.description}}</view>
+                 </view>
+                 <view class="plan">
+                     <view class="workInner">
+                         <text class="work_title">下周工作计划</text>
+                     </view>
+                     <view class="item" wx:for="{{planList}}" wx:key="planList">{{item.description}}</view>
+                    
+                 </view>
+             </view>
+         </view>
+    </view>
+  </view>
+</view>

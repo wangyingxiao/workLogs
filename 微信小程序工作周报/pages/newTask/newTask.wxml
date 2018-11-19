@@ -1,0 +1,10 @@
+<!--pages/newTask/newTask.wxml-->
+<text>任务描述</text>
+<view class="inputOuter">
+  <input class="des" value="{{inputvalue1}}"></input>
+</view>
+<text>任务分组</text>
+<view class="inputOuter">
+<input class="group" value="移动研发组" disabled></input>
+</view>
+<button class="btn btn-save" bindtap="save">保存</button>

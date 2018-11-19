@@ -1,0 +1,70 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.loginbox{
+
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-text{
+ margin-bottom:20px;
+ margin-top:20px;
+
+}
+.loginbox .username,.loginbox .pwd{
+  border-bottom:1px solid #D9EEF5;
+  width:90%; 
+  height:30px;
+  line-height: 30px;
+  padding-left:30px;
+  border-radius: 5px;
+  margin-bottom:10px;
+  display: inline-block;
+}
+.userbox{
+  position: relative;
+  width:100%;
+}
+.userimg{
+  width:20px;
+  height:20px;
+  position: absolute;
+  top:5px;
+  left:0;
+}
+navigator{
+
+  width:100%;
+}
+.btn{
+  width:80%;
+  height:30px;
+  line-height: 30px;
+  margin-top:30px;
+  margin-bottom:20px;
+  background: #01CEAD;
+  border-radius: 15px;
+  color:#fff;
+  font-weight: normal;
+  font-size:14px;
+}

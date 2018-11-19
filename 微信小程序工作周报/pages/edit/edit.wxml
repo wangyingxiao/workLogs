@@ -1,0 +1,30 @@
+<!--pages/edit/edit.wxml-->
+<view class="containter">
+  <view class="topbox">
+    <view class="item {{index==idx?'finish':''}}" wx:for="{{topList}}" wx:key="topList"   data-index="{{index}}" data-id="{{item.id}}" bindtap='goTopIndex'>
+    {{item.title}}</view>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for="{{contentList}}" wx:key="contentList">
+      <view class="imgouter">
+         <image  src="{{userInfo}}"></image>
+      </view>
+      <view class="itemOuter">
+        <view class="item-top">
+          <view class="name">{{userName}}</view>
+          <view class="time">{{item.timeDis}}</view>      
+        </view>
+        <view class="content">{{item.description}}</view>
+        <view class="delete" bindtap="delete" data-id="{{item.id}}">删除</view>
+      </view>     
+    </view>          
+  </view>
+  <!-- <view class="list {{idx==1?'show':''}}">下周计划</view>
+  <view class="list {{idx==2?'show':''}}">意见与建议</view> -->
+  <!-- 编辑框 -->
+   <view class="section">
+      <textarea   bindinput='getDes'value="{{textvalue}}"/>
+    </view>
+    <button bindtap="save" class="btn save">
+    <image src="../images/icon-save.png" class="icon-save"></image>保存</button>
+</view>

@@ -1,0 +1,97 @@
+/* pages/info/info.wxss */
+
+.model-content{ 
+  width:100vw;
+  
+}
+.model-content .model-header{
+  display: flex;
+  justify-content:space-between;
+  height:40px;
+  line-height:40px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.model-content .model-header .title{
+  font-size:16px;
+  font-weight:bold;
+}
+.model-content .model-header .close{
+  font-size: 14px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+.model-body image{
+  width:14px;
+  height:14px;
+  margin-right:6px;
+  vertical-align: middle;
+}
+
+.model-body-top{
+  text-align: center;
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+.model-body-top .name{
+  font-size:22px;
+  color:#02CEAD;
+  vertical-align: middle;
+}
+.model-body-top image.name {
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right:10px;
+}
+.model-body-top-list{
+  display: flex;
+  justify-content:space-between;
+  color:#f1a325;
+  font-size:14px;
+  padding:0 10px 10px 30px;
+  border-left:1px dashed #e5e5e5;
+}
+.model-body-top-list text{
+  vertical-align: middle;
+}
+.model-body-list{
+  padding:0 10px 10px 30px;
+  border-left:1px dashed #e5e5e5;
+}
+.model-body-list .work{
+  margin-bottom:10px;
+}
+.model-body-list .advise{
+  margin-bottom:10px;
+}
+.model-body-list .workInner1{
+  padding-top:10px;
+  border-top:1px solid #ddd;
+}
+.model-body-list .workInner{
+  height:30px;
+  line-height:30px;
+
+}
+.model-body-list .work_title{
+  color:#145ccd;
+  font-size: 13px;
+  font-weight: 600;
+  float:left;
+}
+.model-body-list .time{
+  float:right;
+  margin-right:4px;
+  color:grey;
+  font-size: 13px;
+}
+.model-body-list .item{
+  color: #353535;
+  font-size:14px;
+  margin-bottom:5px;
+  line-height: 2;
+}
